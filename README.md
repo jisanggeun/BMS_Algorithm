@@ -54,7 +54,7 @@ The BMS estimates **State of Charge (SOC)** based on decoded **current**, **volt
 - `main.py` : Entry point for running the full simulation
 
 ## Results
-
+[output_log.csv](https://github.com/user-attachments/files/22876035/output_log.csv)
 
 # Todo-list
 
