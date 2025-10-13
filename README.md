@@ -53,10 +53,23 @@ The BMS estimates **State of Charge (SOC)** based on decoded **current**, **volt
 - `configs/` : Parameter and lookup tables
 - `main.py` : Entry point for running the full simulation
 
-## Results
+## 📊 Results
 [output_log.csv](https://github.com/user-attachments/files/22876035/output_log.csv)
 
-# Todo-list
+The simulation generates the file **`output_log.csv`**, which contains the measured and processed data used for SOC estimation.
+
+| Column | Unit | Description |
+|:-------------------------------|:---------|:------------------------------------------------|
+| **Terminal voltage [V]** | V | Measured cell terminal voltage |
+| **X-averaged cell temperature [K]** | K | Average cell temperature across the electrode |
+| **Battery open-circuit voltage [V]** | V | Estimated open-circuit voltage (OCV) |
+| **Current [A]** | A | Measured current (positive: discharge, negative: charge) |
+| **Time [s]** | s | Timestamp of each data sample |
+
+## 🧩 Todo List
+- [ ] **Port simulation from single-cell to multi-cell architecture**  
+- [ ] **Add detailed thermal-related parameters for temperature modeling**  
+- [ ] **Refine linear capacity degradation model for long-term cycles**
 
 ## 🚀 Run
 ```bash
