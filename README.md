@@ -14,9 +14,9 @@ The BMS estimates **State of Charge (SOC)** based on decoded **current**, **volt
   - dsg_current_threshold
   - chg_current_threshold
 - Determine one of three modes:
-  - **Relaxation**
-  - **Charging**
-  - **Discharging**
+  - Relaxation
+  - Charging
+  - Discharging
 
 ---
 
