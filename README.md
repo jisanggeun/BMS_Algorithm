@@ -11,8 +11,8 @@ The BMS estimates **State of Charge (SOC)** based on decoded **current**, **volt
 
 ### ⚙️ 1. Mode Decision
 - Compare current with thresholds:
-  - `dsg_current_threshold`
-  - `chg_current_threshold`
+  - dsg_current_threshold
+  - chg_current_threshold
 - Determine one of three modes:
   - **Relaxation**
   - **Charging**
@@ -22,8 +22,8 @@ The BMS estimates **State of Charge (SOC)** based on decoded **current**, **volt
 
 ### 💤 2. Relaxation Mode
 - Check stability conditions:
-  - `dv/dt < relax_dvdt_threshold`
-  - `time_in_relaxation > relax_time_threshold`
+  - dv/dt < relax_dvdt_threshold
+  - time_in_relaxation > relax_time_threshold
 - If stable:
   - Perform **IR correction** using temperature-compensated resistance  
   - Estimate **SOC** from the corrected OCV
